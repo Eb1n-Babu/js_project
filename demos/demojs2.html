@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        const checkPalindrome = () =>{
+            const palindrome = document.getElementById("text1").value.split("").reverse().join("");
+            if (palindrome.toUpperCase() === (document.getElementById("text1").value).toUpperCase()){
+                document.getElementById("result").innerHTML = "this is palindrome";
+            }else{
+                document.getElementById("result").innerHTML = "this is not palindrome";
+            }
+        }
+    </script>
+</head>
+<body>
+    <label>check palindrome or not : <input id="text1" type="text" placeholder="enter a number "/></label>
+    <button onclick="checkPalindrome()">check palindrome</button>
+    <h1 id="result"></h1>
+</body>
+</html>
