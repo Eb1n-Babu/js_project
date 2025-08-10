@@ -36,11 +36,15 @@ const greet = (name) =>{
 
 greet("malayalam")
 
-const square = (x) =>{
-    const val = x*x
-    console.log(x)
+const square = (x) => {
+    const val = x * x;
+    console.log(val);
+};
+
+for (let i = 0; i < 5; i++) {
+    square(i);
 }
 
-for (let i = 0; i < 5; i++){
-    square(i)
+for (let i = 0; i < 10; i++) {
+    console.log(i);
 }
