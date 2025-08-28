@@ -12,7 +12,8 @@ function Joke(props) {
 
     return (
         <div>
-            <h1>{jokes}</h1>
+            <h1>{jokes.setup}</h1>
+            <h1>{jokes.delivery}</h1>
             <button onClick={Fetchjoke}>BOTTON</button>
         </div>
     );
